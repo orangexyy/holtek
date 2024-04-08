@@ -3,7 +3,7 @@
 <title>Static Call Graph - [..\Output\Project.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\Output\Project.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Sun Apr 07 17:13:36 2024
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Mon Apr 08 20:11:06 2024
 <BR><P>
 <H3>Maximum Stack Usage =        128 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -269,10 +269,10 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[41]"></a>GPIO_WriteOutBits</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, ht32f5xxxx_gpio.o(i.GPIO_WriteOutBits))
-<BR><BR>[Called By]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Write_IIC_Byte
-<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Wait_Ack
+<BR><BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Wait_Ack
 <LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Stop
 <LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Start
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Write_IIC_Byte
 </UL>
 
 <P><STRONG><a name="[11]"></a>GPTM0_IRQHandler</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, timer.o(i.GPTM0_IRQHandler))
@@ -351,10 +351,10 @@ Global Symbols
 <P><STRONG><a name="[49]"></a>OLED_Init</STRONG> (Thumb, 252 bytes, Stack size 8 bytes, oled.o(i.OLED_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = OLED_Init &rArr; OLED_WR_Byte &rArr; Write_IIC_Data &rArr; Write_IIC_Byte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WR_Byte
-<LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_DirectionConfig
+<BR>[Calls]<UL><LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_DirectionConfig
 <LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKCU_PeripClockConfig
 <LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WR_Byte
 </UL>
 <BR>[Called By]<UL><LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -364,8 +364,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WR_Byte
 </UL>
-<BR>[Called By]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_ShowChar
-<LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_ShowCHinese_Three
+<BR>[Called By]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_ShowCHinese_Three
+<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_ShowChar
 </UL>
 
 <P><STRONG><a name="[4c]"></a>OLED_ShowCHinese_Three</STRONG> (Thumb, 70 bytes, Stack size 24 bytes, oled.o(i.OLED_ShowCHinese_Three))
@@ -400,11 +400,11 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Write_IIC_Data
 <LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Write_IIC_Command
 </UL>
-<BR>[Called By]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_ShowChar
-<LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Set_Pos
-<LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_ShowCHinese_Three
+<BR>[Called By]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_ShowCHinese_Three
 <LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Init
 <LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Clear
+<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_ShowChar
+<LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Set_Pos
 </UL>
 
 <P><STRONG><a name="[4]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, ht32f5xxxx_01_it.o(i.PendSV_Handler))
@@ -522,13 +522,13 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKCU_GetPeripFrequency
 <LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
 </UL>
-<BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USARTx_Config
-<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTx_Config
+<BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTx_Config
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USARTx_Config
 </UL>
 
 <P><STRONG><a name="[57]"></a>USART_IntConfig</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, ht32f5xxxx_usart.o(i.USART_IntConfig))
-<BR><BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USARTx_Config
-<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTx_Config
+<BR><BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTx_Config
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USARTx_Config
 </UL>
 
 <P><STRONG><a name="[5c]"></a>USART_ReceiveData</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, ht32f5xxxx_usart.o(i.USART_ReceiveData))
@@ -541,16 +541,16 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[58]"></a>USART_TxRxCmd</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, ht32f5xxxx_usart.o(i.USART_TxRxCmd))
-<BR><BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USARTx_Config
-<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTx_Config
+<BR><BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTx_Config
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USARTx_Config
 </UL>
 
 <P><STRONG><a name="[5f]"></a>USARTx_Init</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, usart.o(i.USARTx_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = USARTx_Init &rArr; USARTx_Config &rArr; USART_Init &rArr; CKCU_GetPeripFrequency &rArr; CKCU_GetClocksFrequency &rArr; __aeabi_uidivmod
 </UL>
-<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USARTx_Config
-<LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AFIO_GPxConfig
+<BR>[Calls]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AFIO_GPxConfig
 <LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CKCU_PeripClockConfig
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USARTx_Config
 </UL>
 <BR>[Called By]<UL><LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -584,10 +584,10 @@ Global Symbols
 <P><STRONG><a name="[50]"></a>Write_IIC_Command</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, oled.o(i.Write_IIC_Command))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = Write_IIC_Command &rArr; Write_IIC_Byte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Write_IIC_Byte
-<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Wait_Ack
+<BR>[Calls]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Wait_Ack
 <LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Stop
 <LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Start
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Write_IIC_Byte
 </UL>
 <BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WR_Byte
 </UL>
@@ -595,10 +595,10 @@ Global Symbols
 <P><STRONG><a name="[4f]"></a>Write_IIC_Data</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, oled.o(i.Write_IIC_Data))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = Write_IIC_Data &rArr; Write_IIC_Byte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Write_IIC_Byte
-<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Wait_Ack
+<BR>[Calls]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Wait_Ack
 <LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Stop
 <LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Start
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Write_IIC_Byte
 </UL>
 <BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WR_Byte
 </UL>
@@ -636,7 +636,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 </UL>
 
-<P><STRONG><a name="[26]"></a>main</STRONG> (Thumb, 106 bytes, Stack size 0 bytes, main.o(i.main))
+<P><STRONG><a name="[26]"></a>main</STRONG> (Thumb, 100 bytes, Stack size 0 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = main &rArr; OLED_ShowString &rArr; OLED_ShowChar &rArr; OLED_Set_Pos &rArr; OLED_WR_Byte &rArr; Write_IIC_Data &rArr; Write_IIC_Byte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
